@@ -1,0 +1,53 @@
+<!-- launch programs -->
+<!-- Launch Shell with Ctrl+Alt+t-->
+    <keybind key="C-A-t">
+      <action name="Execute">
+        <command>lxterminal</command>
+      </action>
+    </keybind>
+<!-- Launch Firefox with Ctrl+Alt+f-->
+    <keybind key="C-A-f">
+      <action name="Execute">
+        <command>firefox</command>
+      </action>
+    </keybind>
+<!-- Lock screen with Ctrl+Alt+l-->
+    <keybind key="C-A-l">
+      <action name="Execute">
+        <command>xscreensaver-command -lock</command>
+      </action>
+    </keybind>
+
+<!-- window positions -->
+    <keybind key="W-Up">        # FullScreen
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
+    <keybind key="W-Right">     # HalfRightScreen
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>-0</x><y>0</y>
+        <height>101%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <keybind key="W-Left">      # HalfLeftScreen
+      <action name="UnmaximizeFull"/>
+      <action name="MoveResizeTo">
+        <x>0</x><y>0</y>
+        <height>101%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+
+    <keybind key="C-A-S-Left">
+      <action name="SendToDesktopLeft">
+        <dialog>no</dialog>
+        <wrap>no</wrap>
+      </action>
+    </keybind>
+    <keybind key="C-A-S-Right">
+      <action name="SendToDesktopRight">
+        <dialog>no</dialog>
+        <wrap>no</wrap>
+      </action>
+    </keybind>

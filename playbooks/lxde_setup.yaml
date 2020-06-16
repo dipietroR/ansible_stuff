@@ -1,0 +1,6 @@
+- name: setup lxde
+  hosts: localhost
+  gather_facts: False
+  tasks:
+  - include_role:
+      name: keybindings
