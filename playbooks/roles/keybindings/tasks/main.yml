@@ -4,7 +4,7 @@
 - name: add keybindings
   blockinfile:
     block: "{{ lookup('file', 'key_bindings.xml') }}"
-    marker: "<!-- {mark} My keybindings -->"
+    marker: "    <!-- {mark} My keybindings -->"
     dest: ~/.config/openbox/lxde-rc.xml
     backup: yes
     insertafter: "<keyboard>"
